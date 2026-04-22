@@ -6,7 +6,7 @@
 
 ## Visão Geral
 
-Este projeto implementa um pipeline completo de **risk management quantitativo** voltado para o mercado de renda variável brasileiro. Desenvolvido como portfólio técnico para posições em bancos de investimento (J.P. Morgan, Itaú BBA, Santander), o código demonstra domínio das metodologias exigidas em áreas de **Risk, Quant Finance e Structuring**.
+Este projeto implementa um pipeline completo de **risk management quantitativo** voltado para o mercado de renda variável brasileiro. Desenvolvido como portfólio técnico para posições em bancos de investimento, o código demonstra domínio das metodologias exigidas em áreas de **Risk, Quant Finance e Structuring**.
 
 **Carteira analisada:** ITUB4, BBDC4, PETR4, VALE3, BBAS3 (igualmente ponderada, 20% cada)  
 **Benchmark:** Ibovespa (^BVSP)  
@@ -35,7 +35,7 @@ CVaR_α = E[L | L > VaR_α]
 ```
 
 **Por que Basel III prefere CVaR ao VaR?**  
-O VaR ignora a magnitude das perdas na cauda — dois portfólios com o mesmo VaR de 2% podem ter CVaRs de 3% e 8%. O CVaR é uma medida de risco coerente (satisfaz subaditividade), o que incentiva diversificação. O framework **FRTB (Basel IV)** substituiu VaR por ES como métrica padrão de capital regulatório.
+O VaR ignora a magnitude das perdas na cauda, dois portfólios com o mesmo VaR de 2% podem ter CVaRs de 3% e 8%. O CVaR é uma medida de risco coerente (satisfaz subaditividade), o que incentiva diversificação. O framework **FRTB (Basel IV)** substituiu VaR por ES como métrica padrão de capital regulatório.
 
 ### Beta de Mercado
 
@@ -93,8 +93,8 @@ portfolio-risk-analysis/
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/seu-usuario/portfolio-risk-analysis.git
-cd portfolio-risk-analysis
+git clone https://github.com/Kaique-Pinheiro/Portfolio-Risk-Analysis-B3.git
+cd Portfolio-Risk-Analysis-B3
 
 # 2. Criar ambiente virtual (recomendado)
 python -m venv venv
@@ -200,19 +200,8 @@ Decorre da propriedade de que, se retornos diários são i.i.d., a variância an
 
 ### Por que comparar VaR Paramétrico vs Histórico?
 
-Mercados financeiros exibem **fat tails** — eventos extremos ocorrem com frequência maior do que a distribuição normal prevê (fenômeno documentado por Mandelbrot e Taleb). Quando VaR Histórico > VaR Paramétrico, os dados confirmam que as caudas reais são mais pesadas que a normal — validação empírica da escolha pelo CVaR como métrica regulatória.
+Mercados financeiros exibem **fat tails** — eventos extremos ocorrem com frequência maior do que a distribuição normal prevê (fenômeno documentado por Mandelbrot e Taleb). Quando VaR Histórico > VaR Paramétrico, os dados confirmam que as caudas reais são mais pesadas que a normal, lavando à validação empírica da escolha pelo CVaR como métrica regulatória.
 
----
-
-## Próximos Passos
-
-- [ ] **Backtesting de VaR** — testes de Kupiec (POF) e Christoffersen (independência das violações)
-- [ ] **GBM Multivariado** — Monte Carlo com Cholesky decomposition para preservar correlações
-- [ ] **Stress Testing** — cenários históricos (crise 2008, COVID-19, eleições BR) e hipotéticos
-- [ ] **Streamlit Dashboard** — interface interativa para seleção dinâmica de ativos e pesos
-- [ ] **Otimização com restrições** — turnover máximo, exposição setorial, drawdown máximo
-
----
 
 ## Referências
 
@@ -225,6 +214,6 @@ Mercados financeiros exibem **fat tails** — eventos extremos ocorrem com frequ
 
 ## Autor
 
-**Kaique** — Estudante de Engenharia, FEI  
-GitHub: [github.com/seu-usuario](https://github.com/seu-usuario)  
-Email: seu-email@fei.edu.br
+**Kaique Pinheiro** : Estudante de Ciência da Computação, FEI  
+GitHub: https://github.com/Kaique-Pinheiro  
+Email: kaique.pinheiro.dev@gmail.com
