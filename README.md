@@ -1,2 +1,2 @@
 # portfolio-risk-analysis
-Análise quantitativa de risco de carteira de ações da B3 utilizando metodologias usadas na indústria financeira: VaR, CVaR, Beta de mercado, Simulação de Monte Carlo e Fronteira Eficiente de Markowitz.
+Quantitative risk analysis of a B3 equity portfolio using industry-standard methodologies: VaR, CVaR, Market Beta, Monte Carlo Simulation and Markowitz Efficient Frontier.
