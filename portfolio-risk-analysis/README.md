@@ -93,8 +93,8 @@ portfolio-risk-analysis/
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/Kaique-Pinheiro/Portfolio-Risk-Analysis-B3.git
-cd Portfolio-Risk-Analysis-B3
+git clone https://github.com/Kaique-Pinheiro/portfolio-risk-analysis.git
+cd portfolio-risk-analysis
 
 # 2. Criar ambiente virtual (recomendado)
 python -m venv venv
@@ -155,7 +155,7 @@ ITUB4             18.42                   28.61    -0.2341    3.1204        0.29
 | 3 | Heatmap de Correlação | Matriz de correlação com valores anotados |
 | 4 | VaR por Ativo | Bar chart comparativo do VaR histórico (95%) |
 | 5 | Monte Carlo | Histograma dos 10k cenários simulados |
-| 6 (base) | Fronteira Eficiente | Scatter de 3.000 carteiras colorido por Sharpe |
+| 6 | Fronteira Eficiente | Scatter de 3.000 carteiras colorido por Sharpe |
 
 ---
 
@@ -196,19 +196,19 @@ volatilidade_anual = volatilidade_diaria * np.sqrt(252)
 retorno_anual      = retorno_diario_medio * 252
 ```
 
-Decorre da propriedade de que, se retornos diários são i.i.d., a variância anual é 252× a variância diária, portanto o desvio-padrão anual é √252 × o desvio-padrão diário.
+Decorre da propriedade de que, se retornos diários são i.i.d., a variância anual é 252× a variância diária, portanto o desvio padrão anual é √252× o desvio padrão diário.
 
 ### Por que comparar VaR Paramétrico vs Histórico?
 
-Mercados financeiros exibem **fat tails** — eventos extremos ocorrem com frequência maior do que a distribuição normal prevê (fenômeno documentado por Mandelbrot e Taleb). Quando VaR Histórico > VaR Paramétrico, os dados confirmam que as caudas reais são mais pesadas que a normal, lavando à validação empírica da escolha pelo CVaR como métrica regulatória.
+Mercados financeiros exibem **fat tails**, eventos extremos ocorrem com frequência maior do que a distribuição normal prevê (fenômeno documentado por Mandelbrot e Taleb). Quando VaR Histórico > VaR Paramétrico, os dados confirmam que as caudas reais são mais pesadas que a normal, levando à validação empírica da escolha pelo CVaR como métrica regulatória.
 
 
 ## Referências
 
-- **Markowitz, H.** (1952). Portfolio Selection. *Journal of Finance*, 7(1), 77–91.
-- **J.P. Morgan / Reuters** (1996). *RiskMetrics — Technical Document* (4th ed.).
-- **Hull, J.C.** (2018). *Risk Management and Financial Institutions* (5th ed.). Wiley.
-- **Basel Committee on Banking Supervision** (2019). *Minimum capital requirements for market risk (FRTB)*.
+- **Markowitz, H.** (1952). Portfolio Selection. *Journal of Finance*.
+- **J.P. Morgan / Reuters** (1996). *RiskMetrics Technical Document*.
+- **Hull, J.C.** (2018). *Risk Management and Financial Institutions*.
+- **Basel Committee on Banking Supervision** (2019).
 
 ---
 
